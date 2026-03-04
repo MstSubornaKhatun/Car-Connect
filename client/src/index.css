@@ -1,17 +1,21 @@
-/* Font */
+/* Google Font - Outfit */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-
+/* Tailwind activate */
 @import "tailwindcss";
 
-*{
+
+/* Font Application Universal */
+* {
     font-family: "Outfit", sans-serif;
 }
 
 
+
+/* Custom theme color define */
 @theme {
-  --color-primary: #1E3A8A;
-  --color-primary-dull: #1E40AF;
-  --color-light: #DBEAFE;
-  --color-borderColor: #1E40AF;
+  --color-primary: #1E3A8A; /* Main brand color */
+  --color-primary-dull: #1E40AF; /* hover color*/
+  --color-light: #DBEAFE; /* light background color */
+  --color-borderColor: #1E40AF; /*border color */
 }
