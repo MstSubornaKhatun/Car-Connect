@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import CarDetails from './pages/CarDetails';
 import Car from './pages/Car';
 import MyBookings from './pages/MyBookings.JSX';
+import Footer from './pages/Footer';
 
 const App = () => {
   const [showLogin, setShowLogin] = useState(false); // login modal control
@@ -62,6 +63,9 @@ const isOwnerPath = useLocation().pathname.startsWith('/owner')
       <Route path='/car' element={<Car/>}/>
       <Route path='/my-bookings' element={<MyBookings/>}/>
      </Routes>
+     {!isOwnerPath && <Footer/>}
+
+     
     </>
   )
 }
