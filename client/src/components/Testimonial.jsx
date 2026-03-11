@@ -37,7 +37,7 @@ const Testimonial = () => {
                 {testimonial.map((testimonial, index) => (
                     <div key={index} className='p-8 m-4 max-w-xs rounded-lg bg-[#FDFDFE] shadow-lg border border-gray-100 hover:-translate-y-1 transition duration-300 cursor-pointer'>
                         <div className="flex items-center gap-1">
-                            {Array(1).fill(0).map((_, index)=> (
+                            {Array(5).fill(0).map((_, index)=> (
                                 <img key={index} src={assets.star_icon} alt="star-icon" />
                             ))}
                         </div>
